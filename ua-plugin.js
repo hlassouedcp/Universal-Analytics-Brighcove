@@ -41,6 +41,19 @@ function trackBrightCove(){
 		videoPlayer.addEventListener(brightcove.api.events.MediaEvent.STOP, function(event) {onStop(event)});
 		videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PROGRESS, function(event) {onProgress(event)});
 		  
+		//// The Full List if Needed   ////
+		//videoPlayer.addEventListener(brightcove.api.events.MediaEvent.BEGIN, onMediaEventFired);
+                //videoPlayer.addEventListener(brightcove.api.events.MediaEvent.CHANGE, onMediaEventFired);
+                //videoPlayer.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, onMediaEventFired);
+                //videoPlayer.addEventListener(brightcove.api.events.MediaEvent.ERROR, onMediaEventFired);
+                //videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, onMediaEventFired);
+                //videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PROGRESS, onMediaProgressFired);
+                //videoPlayer.addEventListener(brightcove.api.events.MediaEvent.STOP, onMediaEventFired);
+		  
+		  
+		  
+		  
+		  
 		var onPlay = function(evt) {
 			dataLayer.push({
 				event: "video",
